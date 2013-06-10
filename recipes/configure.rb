@@ -38,7 +38,7 @@ end
 
 
 execute "Configure Reporting Module" do
-  command " \"#{reporting_build_loc}\" -DIA_USER_JRE_HOME=\"#{jre_loc}\" -i silent -f \"/tmp/idmreporting_configure.properties\" "
+  command " \"#{reporting_build_loc}\" -DIA_USER_JRE_HOME=\"#{jre_loc}\" -i silent -f \"/tmp/idmreporting_configure.properties\" > /opt/novell/idm/rbpm/IDMReporting//RPT_Install2.log "
   creates "/opt/novell/idm/rbpm/IDMReporting//RPT_Install2.log"
   action :run
   

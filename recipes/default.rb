@@ -21,7 +21,7 @@ end
 
 execute "Install Reporting Module" do
   command " \"#{reporting_build_loc}\" -DIA_USER_JRE_HOME=\"#{jre_loc}\" -i silent -f \"/tmp/idmreporting_install.properties\" "
-  creates "/opt/novell/sentinel_eas/EASInstall.log"
+  creates "/opt/novell/idm/rbpm/IDMReporting//RPT_Install.log"
   action :run
   
 end
